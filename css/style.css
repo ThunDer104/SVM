@@ -100,11 +100,25 @@ html, body {
 
 .contacts-text {
   margin-right: 15px;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--text-color);
   text-transform: uppercase;
+}
+
+.header__contacts-tel {
+text-decoration: none;
+color: var(--text-color);
+text-transform: uppercase;
+font-size: 18px;
+transition: color 0.2s ease-in;
+
+&:hover {
+  color: #0056b3;
+}
 
 }
+
+
 
 .contacts-link {
   margin-left: 10px;
@@ -316,16 +330,52 @@ html, body {
 .partners__card-logo {
 }
 
+
+
+
 .footer {
-  padding: 50px 0;
+  background-color: #333;
+  padding: 20px 0;
+  color: #fff;
+  font-size: 20px;
 }
+
 .footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.footer__logo {
+  width: 170px;
+}
+.footer__contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer__contacts-tel {
+  text-decoration: none;
 
-@media (max-width: 1400px) {
+}
+.footer__contacts-icons {
+  display: flex;
+  gap: 10px;
+}
+.footer__contacts-link {
+}
+.footer__contacts-icon {
+  width: 30px;
+}
+
+.footer__contacts-tel, .footer__contacts-email {
+  transition: 0.3s all;
+}
+
+.footer__contacts-tel:hover,.footer__contacts-email:hover {
+  color: var(--accent-color);
+}
+
+@media (max-width: 1450px) {
   .partners__card-img-wrapper {
     left: 0;
   }
@@ -448,6 +498,13 @@ html, body {
 
 }
 
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+  gap: 15px;
+  }
+}
+
 @media (max-width: 650px) {
   .header__right {
     gap: 25px
@@ -478,9 +535,20 @@ html, body {
 }
 
 @media (max-width: 450px) {
-  .contacts-text {
-    display: none;
+  .header__right {
+    flex-direction: column;
   }
+
+  .header__contacts {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .header__contacts-tel {
+    font-size: 20px;
+  }
+
   .logo-text {
     display: none;
   }
