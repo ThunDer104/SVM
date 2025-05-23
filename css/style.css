@@ -324,6 +324,13 @@ html, body {
   justify-content: space-between;
   align-items: center;
 }
+
+@media (max-width: 1400px) {
+  .partners__card-img-wrapper {
+    left: 0;
+  }
+}
+
 @media (max-width: 1024px) {
   .header__right {
     gap: 50px;
