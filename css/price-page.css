@@ -40,6 +40,9 @@
   font-size: 22px;
   letter-spacing: 1px;
 }
+.price-table-price {
+  min-width: 90px;
+}
 @media (max-width: 768px) {
   .price-table__cell,
   .price-table__cell--head {
