@@ -123,7 +123,17 @@
 
 @media (max-width: 1300px) {
   .about__list::before {
-    display: none;
+    bottom: -330px;
+    left: 0;
+    right: unset;
+
+    width: 380px;
+    height: 400px;
+  }
+
+  .about__list {
+    margin-bottom: 332px;
+    position: relative;
   }
 }
 
@@ -147,13 +157,16 @@
   }
 
   .about__list::before {
-    /* Adjust position or size if needed for tablet layout */
-    /* Example: display: none; if the image is too large or misplaced */
-    /* Or adjust position: bottom: -50px; right: 50px; */
-    width: 300px;
-    height: 350px;
-    bottom: -50px;
-    right: 50px;
+    bottom: -380px;
+    left: 0;
+    right: unset;
+
+    width: 380px;
+    height: 400px;
+  }
+
+  .about__list {
+    margin-bottom: 382px;
   }
 
   .info__title {
@@ -181,6 +194,8 @@
     font-size: 40px;
     margin-bottom: 50px;
   }
+
+  
 }
 
 /* ================== Адаптив для меньших планшетов и мобильных устройств (до 768px) ================== */
@@ -211,8 +226,10 @@
     /* Further adjust position or size if needed */
     width: 250px;
     height: 300px;
-    bottom: -30px;
-    right: 30px;
+    bottom: -280px;
+  }
+  .about__list {
+    margin-bottom: 283px;
   }
 
   .info__title {
