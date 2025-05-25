@@ -46,11 +46,20 @@
     font-size: 16px;
     padding: 12px 8px;
   }
+
+  .price__title {
+    font-size: 50px;
+    text-align: center;
+  }
 }
 @media (max-width: 400px) {
   .price-table__cell,
   .price-table__cell--head {
     font-size: 13px;
     padding: 8px 4px;
+  }
+ 
+  .price-table {
+    border-radius: 4px;
   }
 }
